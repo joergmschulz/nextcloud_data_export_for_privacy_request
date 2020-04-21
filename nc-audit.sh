@@ -4,7 +4,7 @@
 if [ -n "$1" ]; then #
 
 
-    audit_user='joerg.schulz'
+    audit_user=$1
 
     echo "========================
     LISTE IHRER DATEIEN" > $audit_user.log
@@ -51,3 +51,4 @@ if [ -n "$1" ]; then #
     done
 else
     echo 'please enter a userID to search.'
+fi
